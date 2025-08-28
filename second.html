@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Temple Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="images/png" href="https://github.com/SDDD1964/website/blob/main/download.png?raw=true">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f5f2;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .countdown-item {
+            background: linear-gradient(135deg, #800020 0%, #a03050 100%);
+        }
+        
+        .hero-pattern {
+            background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-06%20at%2010.56.59%20AM.jpeg?raw=true');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="min-h-screen overflow-x-hidden">
+    <!-- Header -->
+    <header class="bg-[#800020] text-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="https://github.com/SDDD1964/website/blob/main/download.png?raw=true" alt="Temple Logo" class="h-12 mr-3">
+                    <div class="flex flex-col">
+                        <h1 class="text-2xl md:text-3xl font-bold">Shree Kshetra Aslpha</h1>
+                        <h2 class="text-lg md:text-xl">Shree Dattatreya Durgambika Devasthana</h2>
+                    </div>
+                </div>
+                <nav class="flex space-x-1 md:space-x-6">
+                    <a href="#home" class="px-3 py-2 rounded hover:bg-[#600018] transition">Home</a>
+                    <a href="#events" class="px-3 py-2 rounded bg-[#70001c] hover:bg-[#900028] transition">Events</a>
+                    <a href="#contact" class="px-3 py-2 rounded hover:bg-[#600018] transition">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern min-h-screen flex items-center justify-center pt-32">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4"><SPAN STYLE="color:#FFFFFF">Upcoming Events</SPAN></h1>
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto"><SPAN STYLE="color:#FFFFFF">Join us in celebrating divine occasions and spiritual gatherings at our temple.</SPAN></p>
+        </div>
+    </section>
+
+    <!-- Events List -->
+    <section id="events" class="pt-24 pb-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-[#800020] mb-12">Our Upcoming Events</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="event-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-06%20at%2010.06.34%20AM.jpeg?raw=true">
+                        <div class="absolute top-4 left-4 bg-[#800020] text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Aug 15, 2025
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-clock text-[#800020] mr-2"></i>
+                            <span class="text-gray-600">8:00 PM - 11:55 PM</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-gray-800">Shree Krishna Janmashtami</h4>
+                        <p class="text-gray-600 mb-4">Grand celebration of Shree Krishna's birthday with Bhajane, Mangalarathi, Arghya pradhana and Teerthaprasada. Watch it Live in our Facebook Channel</p>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="event-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-06%20at%2010.56.51%20AM.jpeg?raw=true">
+                        <div class="absolute top-4 left-4 bg-[#800020] text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Aug 27, 2025
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-clock text-[#800020] mr-2"></i>
+                            <span class="text-gray-600">8:00 AM - 12:00 Noon</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-gray-800">Shree Ganesh Chaturthi</h4>
+                        <p class="text-gray-600 mb-4">Celebration of Ganesh Chaturthi starting from Prarthne, Panchambruta Abhisheka, Gana Homa, Bhajan, Mangalarthi and Theerthaprasada. Watch it live in our Youtube Channel.</p>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="event-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-06%20at%2012.48.19%20PM.jpeg?raw=true">
+                        <div class="absolute top-4 left-4 bg-[#800020] text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Sep 21 - Oct 01, 2025
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-clock text-[#800020] mr-2"></i>
+                            <span class="text-gray-600">4:30 PM - 8:00 PM</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-gray-800">60th Annual Navratri Mahapoojotsav</h4>
+                        <p class="text-gray-600 mb-4">Celebrate the Navratri chanting the name of Lord Durga. Daily the pooja will start from 4:30 PM - 8:00 PM. On Oct 01, the pooja will start from 8:00 AM (Panchambrutha Abhisheka) and will end on 9:00 PM (Devi Darshana & Chamundi Daiva Darshana)</p>
+                    </div>
+
+              </div>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-[#800020] mb-12">Contact With Us</h3>
+            
+            <div class="max-w-2xl mx-auto">
+                <h4 class="text-xl font-semibold mb-4 text-gray-800">Get In Touch</h4>
+                <p class="text-gray-600 mb-6">Have questions about our events or temple activities? Reach out to us and we'll be happy to assist you.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-[#800020] mt-1 mr-3"></i>
+                        <div>
+                            <h5 class="font-medium text-gray-800">Address</h5>
+                            <p class="text-gray-600">Shree Dattatreya Durgambika Mandir Marg, Subhash Nagar, Asalpha, Ghatkopar(W), Mumbai-84</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-phone-alt text-[#800020] mt-1 mr-3"></i>
+                        <div>
+                            <h5 class="font-medium text-gray-800">Phone</h5>
+                            <p class="text-gray-600">+91 77770 78349</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope text-[#800020] mt-1 mr-3"></i>
+                        <div>
+                            <h5 class="font-medium text-gray-800">Email</h5>
+                            <p class="text-gray-600">dattatreyambm@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-2">
+                       <h4 class="text-xl font-bold">Shree Dattatreya Durgambika Devasthana</h4>
+                    </div>
+                    <p class="text-[#d0a0b0]">Conducted by Shree Dattatreya Mitra Bhajana Mandali (R).</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-[#d0a0b0] hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-[#d0a0b0] hover:text-white transition">Events</a></li>
+                        <li><a href="#" class="text-[#d0a0b0] hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.facebook.com/sdddevasthana/" class="text-2xl text-[#d0a0b0] hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sdddevasthana/" class="text-2xl text-[#d0a0b0] hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@dattatreyadurgambikadevast2391" class="text-2xl text-[#d0a0b0] hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/917777078349" class="text-2xl text-[#d0a0b0] hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <p class="text-[#d0a0b0]">
+                        <i class="fas fa-phone-alt mr-2"></i> +91 77770 78349<br>
+                        <i class="fas fa-envelope mr-2"></i> dattatreyambm@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-[#800020] mt-8 pt-8 text-center text-[#e0b0c0]">
+                <p>© Shree Dattatreya Durgambika Deavsthana. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
