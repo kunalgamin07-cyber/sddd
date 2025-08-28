@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Dattatreya Durgambika Devasthana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="images/png" href="https://github.com/SDDD1964/website/blob/main/download.png?raw=true">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Tangerine:wght@700&display=swap');
+        
+        .font-tangerine {
+            font-family: 'Tangerine', cursive;
+        }
+        
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-section {
+            background: url('https://github.com/SDDD1964/website/blob/main/1755182028028.png?raw=true');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+        }
+        
+        .God-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .God-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .schedule-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .schedule-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: #f59e0b;
+            border-radius: 50%;
+        }
+        
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+        
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #f59e0b;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://github.com/SDDD1964/website/blob/main/file.jpg?raw=true" alt="Temple Logo" class="h-16 w-16 mr-3 self-center">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-gray-800">Shree Kshetra Asalpha</h1>
+                    <h2 class="text-xl md:text-2xl font-bold text-gray-800">Shree Dattatreya Durgambika Devasthana</h2>
+                    <p class="text-xs text-gray-600">Shree Dattatreya Durgambika Marg, Subhash Nagar, Asalpha, Ghatkopar (West), Mumbai - 400084</p>
+                </div>
+            </div>
+            <div class="flex-1"></div> <!-- This pushes the button to the right -->
+            <button id="menu-toggle" class="text-gray-800 focus:outline-none ml-auto">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile/Desktop Menu -->
+        <div id="mobile-menu" class="hidden bg-white py-2 px-4 shadow-lg md:absolute md:top-16 md:right-4 md:w-64">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="nav-link active text-gray-800 font-medium py-1">Home</a>
+                <a href="#about" class="nav-link text-gray-800 font-medium py-1">About</a>
+                <a href="#deities" class="nav-link text-gray-800 font-medium py-1">Gods</a>
+                <a href="#seva-details" class="nav-link text-gray-800 font-medium py-1">Seva Details</a>
+                <a href="#online-booking" class="nav-link text-gray-800 font-medium py-1">Online Seva Booking</a>
+                <a href="#seva" class="nav-link text-gray-800 font-medium py-1">Seva Timings</a>
+                <a href="#future" class="nav-link text-gray-800 font-medium py-1">Future Developments</a>
+                <a href="#gallery" class="nav-link text-gray-800 font-medium py-1">Gallery</a>
+                <a href="#social" class="nav-link text-gray-800 font-medium py-1">Social Media</a>
+                <a href="#events" class="nav-link text-gray-800 font-medium py-1">Upcoming Events</a>
+                <a href="#contact" class="nav-link text-gray-800 font-medium py-1">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section flex items-center justify-end md:justify-center text-white relative">
+        <div class="container mx-auto px-4 text-center md:text-right">
+            <div class="max-w-2xl md:ml-auto">
+                <p class="font-tangerine text-3xl md:text-5xl mb-8">Namaste Grama Aadi Shakti Dattatreya Durgambika Subhe|</p>
+                <p class="font-tangerine text-3xl md:text-5xl mb-8">Asalphasthite Jaganmaata Sarvesam Mangalam Kuru ||</p>
+                <div class="flex flex-wrap justify-center md:justify-end gap-4">
+                    <a href="#seva" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                        Seva Schedule
+                    </a>
+                    <a href="#contact" class="bg-transparent hover:bg-white hover:text-gray-800 text-white font-bold py-3 px-6 border-2 border-white rounded-full transition duration-300">
+                        Visit Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Temple Section -->
+    <section id="about" class="py-16 bg-white relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">About Our Temple</h2>
+            
+            <div class="flex flex-col lg:flex-row items-center gap-8">
+                <div class="lg:w-1/2">
+                    <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-04%20at%2011.35.37%20AM.jpeg?raw=true" 
+                         alt="Temple View" class="w-full h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <p class="text-gray-700 mb-6 text-lg">
+                        In the year 1964 at Shree Kshetra Asalpha, "Shree Dattatreya Durgambika Devasthana" was eastablished. Since then, the Devasthana is managed by a Trust called "Shree Dattatreya Mitra Bhajana Mandali (R.)". The devasthana is located at Shree Datatreya Dugambika Mandir Marg, Subhash nagar, Ghatkopar (W), Mumbai - 400 084. Our Devasthana is a Religious and Charitable trust and it comprises of five Deities Shree Adi Shakti Durgambika, Shree Dattatreya, Shree Nagashesha, Shree Anjaneya & Shree Chamundi Daiva. The divine power of these deities has spread far & wide for the betterment of the devotees. Numerous devotees irrespective of caste, creed & religion come together to offer their prayers at the Devasthana. 
+                    </p>
+                    <p class="text-gray-700 mb-6 text-lg">
+                        The Trust is committed towards social, religious & educational causes. We conduct various activities such as Medical & General Assistance for needy like free eye checkup, blood donation camp, health checkup & raise medical assistance to the needy, we extend Annadana Seva to all devotees and needy, we also encourage women empowerment, we impact cultural and traditional education to instill values and awareness among the youth, we distribute school books & other basic necessities to needy and underprivileged, we grant scholarship for deserving & poor children, we also provide Devasthana's open air ground & hall to the poor in concessional rate for Marriage & other occasions. In addition to these ongoing initiatives, we plan to renovate the temple and construct a Kalyana Mantapa in front of the temple, within which we intend to establish a free computer training centre, library, and reading room to promote learning and skill development.
+                    </p>
+                    <p class="text-gray-700 mb-6 text-lg">
+                        We step forward & request all the devotees and well-wishers to extend their generous support and donations to help us achieve these noble objectives. With your cooperation, we are confident that our collective efforts will lead to success. Having come a long way, we were very proud to celebrate the Devasthana’s 50th glorious year. The Golden Jubilee Year (2014–2015) was celebrated with great pomp and devotion, concluding on 8th February 2015. During the fortnight-long celebrations, we organized several social, religious, and cultural programs. The Devasthana created history by organizing the ‘Naga Mandala Seve’ for the very first time in Mumbai, Maharashtra, marking a remarkable and cherishable milestone in our journey
+                    </p>
+                    <div class="bg-amber-50 border-l-4 border-amber-500 p-4">
+                        <p class="text-amber-800 font-medium">
+                            <i class="fas fa-info-circle mr-2"></i> The temple follows all traditional rituals and customs while maintaining cleanliness and discipline for the comfort of devotees.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Devasthana's History Section -->
+    <section id="history" class="py-16 bg-gray-100 relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Devasthana's History</h2>
+            
+            <div class="flex flex-col lg:flex-row items-start gap-8">
+                <div class="lg:w-1/2">
+                    <p class="text-gray-700 mb-6 text-lg">
+                        Decades back about 300 years ago Devidas Maharishi used to worship Durgambika mata on the hills of Asalpha village. With time Devidas Maharishi got absorbed in the feet of God. In the year 1964 few people from Mangalore stayed at Asalpha Village, Subhash Nagar, Ghatkopar (w), after coming back from work these people used to utilise their spare time by performing bhajans. In the beginning, they used to worship Lord Shree Dattatreya. After several days, they decided to appoint  an Archaka to perform pooja on a daily basis. One fine Saturday one of the members brought Shree Durga Mata's image, then they all started worshiping Shree Durga Mata as well. Days went on some more people joined them in performing bhajan and pooja. They then formed a Bhajana Mandali in the name of "Shree Dattatreya Mitra Bhajana Mandali"
+                    </p>
+                    <p class="text-gray-700 mb-6 text-lg">
+                        One day while the archaka was performing mangalarti to Lord Shree Dattatreya and Goddess Shree Durgambika Mata, suddenly Durga Mata entered his body and said that "she appreciated their Bhajan and Pooja and that's why she has come to bless us all". All the members present there were scared and astonished. The next Saturday again the same incident happened while they were performing the mangalarti, but this time they questioned her Who are you & what do you need? for this she replied "that she has appreciated their Bhajan and Pooja and that's why she has come in 'SHILA ROOPA' she is situated in the hill in front of their chawl since time immemorial under sun and rain she requested them take her a place where she will help and protect people as she was becoming unholy in this hill now". Accepting this they informed her about their inability of not having sufficient funds and suitable place to make her shila sthapana.
+                    </p>
+                </div>
+                <div class="lg:w-1/2">
+                    <p class="text-gray-700 mb-6 text-lg">
+                        They requested her to guide them on what should be done to meet her requirements. Shree Durga Mata replied that she has appreciated and accepted their Bhajana and come by herself, she would be satisfied in any condition they kept her. She asked them to meet the landlord of the place right in front of their chawl. She also said that, there is a Mango tree there they can place her 'Shaktishila'. Mandali members did exactly what Shree Durga Mata said. They met the landlord, Mr M.S.Khanna and narrated the whole incident to him, but he did not give them any reply. The next Saturday during devi darshana, mandali told Durga Mata that they had met the landlord, but he did not respond to their request, so Shree Durga Mata asked them, to request him once again. The mandali members approached him again, at this time he readily said ”I will not be able to provide the place situated near the mango tree but as donation from my behalf I shall give some other land” (the land where Devasthana is situated at present). They went back to Shree Durga Mata and said that he was not willing to give the land near the mango tree but was ready to provide some land instead. Shree Durga Mata agrees to this and blesses Mr. M.S.Khanna for this noble contribution and instructs the mandali to build the Devasthana in this donated place and then get her Shaktishila from the hills. She told them there are five shilas out of which the middle shila is her 'Shaktishila, and instructed then to perform her shilasthapna.
+                    </p>
+                    <p class="text-gray-700 mb-6 text-lg">
+                        On 19 February 1965 the Devasthana was built and named "Shree Dattatreya Durgambika Devasthana". All the mandali members gathered and brought Durga Mata’s Shakti Shila from the hill with a grand procession and performed the Shakti Shila Prathishthapna. Since then regular and hi systematic pooja and devi darshana have been conducted every Saturday. Later, three other shakti peeta's were recognised to have their presence around the Devasthana which were Anjanaya, Naga Shesha and Daiva Chamundi. Now the Devasthana has five shakti peetas along with Dattatreya and Durgambika. The divine power of the deity has spread for the betterment of the people and huge number of devotees, irrespective of caste, creed, and religion, gather here to offer their prayers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deities Section -->
+    <section id="deities" class="py-16 bg-gray-100 relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Our Divine Gods</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dattatreya and Durgambika Amma -->
+                <div class="God-card bg-white rounded-lg overflow-hidden shadow-lg">
+                     <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-04%20at%2011.25.16%20AM.jpeg?raw=true" 
+                             alt="Lord Dattatreya" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Shree Dattatreya Durgambika Amma</h3>
+                        <p class="text-gray-600 mb-4">
+                            The divine union of Lord Dattatreya (the combined form of Brahma, Vishnu and Shiva) with Goddess Durgambika Amma (the protective mother goddess). Together they represent the perfect balance of masculine and feminine divine energies.
+                        </p>
+                            <div class="flex items-center text-amber-600">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                <span>Shree Dattatreya Durgambika Amma Pooja: Every Saturday</span>
+                            </div>
+                    </div>
+                </div>
+                
+                <!-- Ganapathi -->
+                <div class="God-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-04%20at%2011.49.58%20AM.jpeg?raw=true" 
+                         alt="Lord Ganapathi" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Lord Ganapathi</h3>
+                        <p class="text-gray-600 mb-4">
+                            The remover of obstacles and the lord of beginnings. Worshipped first in all rituals and ceremonies.
+                        </p>
+                        <div class="flex items-center text-amber-600">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Special Pooja: Ganesh Chaturthi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rama Parivar -->
+                <div class="God-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-04%20at%2011.49.57%20AM.jpeg?raw=true" 
+                         alt="Rama Parivar" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Laxman Seetha Rama Hanumanta</h3>
+                        <p class="text-gray-600 mb-4">
+                            The divine family representing righteousness, devotion and loyalty. Lord Hanuman is the epitome of devotion.
+                        </p>
+                        <div class="flex items-center text-amber-600">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Special Pooja: Ram Navami</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Temple View -->
+                <div class="God-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-04%20at%2011.35.37%20AM.jpeg?raw=true" 
+                         alt="Temple View" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Temple Complex</h3>
+                        <p class="text-gray-600 mb-4">
+                            Our beautiful temple complex provides a serene environment for meditation and prayer, away from the hustle of city life.
+                        </p>
+                        <div class="flex items-center text-amber-600">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>Open daily from 6:00 AM to 9:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Nagashesha -->
+                <div class="God-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-04%20at%2011.49.58%20AM%20(1).jpeg?raw=true" 
+                         alt="Nagashesha" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Nagashesha</h3>
+                        <p class="text-gray-600 mb-4">
+                            The divine serpent god who protects the temple and blesses devotees with prosperity and protection from evil.
+                        </p>
+                        <div class="flex items-center text-amber-600">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Special Pooja: Nagara Panchami</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chamundi Daiva -->
+                <div class="God-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-04%20at%2011.49.58%20AM%20(3).jpeg?raw=true" 
+                         alt="Chamundi Daiva" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Chamundi Daiva</h3>
+                        <p class="text-gray-600 mb-4">
+                            The fierce form of Goddess Durga who destroys evil and protects devotees from negative energies.
+                        </p>
+                        <div class="flex items-center text-amber-600">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>Special Pooja: Every Sankranti and Last Saturday of Every Month</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seva Details Section -->
+    <section id="seva-details" class="py-16 bg-gray-100 relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Seva Details</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Daily Pooja -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-amber-700 mb-4">Annadana Seva</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>The Devasthana conducts Annadaan Seva every Saturday and during festivals. Devotees who wish to donate towards Annadaan can book their Annadaan Seva on the day and date of their choice by paying Rs. 7,001/-. They can book it for occasions such as birthdays, wedding anniversaries, or any other special events, including in loving memory of their dear ones. Devotees can also contribute towards Annadaan Seva either in cash or in kind.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Special Pooja -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-amber-700 mb-4">Sashwata Pooja</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Our Devasthana conducts "SHASHWATA POOJA" for devotees who pay Rs. 2001/- This Pooja will be offered annually in their name on their birthday or any other day of their choice. In the absence of the devotee the prasadam would be dispatched on their postal address.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Other Services -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-amber-700 mb-4">Paniyara Seva</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>At our temple, Paniyara Seva to Goddess Chamundi is performed every month on the occasion of Sankramana. Devotees can offer a contribution of Rs. 501/- to participate in the seva and receive Theertha Prasada along with the divine blessings.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Seva Price List -->
+            <div class="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Seva Price List</h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-amber-50">
+                                <th class="py-3 px-4 text-left font-semibold text-gray-700">Seva Name</th>
+                                <th class="py-3 px-4 text-right font-semibold text-gray-700">Price (₹)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Sarva Seva</td>
+                                <td class="py-3 px-4 text-right text-gray-700">25,001/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Maha Pooja</td>
+                                <td class="py-3 px-4 text-right text-gray-700">15,001/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Purna Alankara Seva</td>
+                                <td class="py-3 px-4 text-right text-gray-700">10,001/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Deepalnkara Seva</td>
+                                <td class="py-3 px-4 text-right text-gray-700">7,001/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Maha Naivedya</td>
+                                <td class="py-3 px-4 text-right text-gray-700">5,011/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Alankara Seva</td>
+                                <td class="py-3 px-4 text-right text-gray-700">2,001/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Navadurga Pooja</td>
+                                <td class="py-3 px-4 text-right text-gray-700">1,001/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Pushpa Pooja</td>
+                                <td class="py-3 px-4 text-right text-gray-700">501/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Durga Pooja</td>
+                                <td class="py-3 px-4 text-right text-gray-700">301/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Dattatreya Pooja</td>
+                                <td class="py-3 px-4 text-right text-gray-700">301/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Anjaneya Pooja</td>
+                                <td class="py-3 px-4 text-right text-gray-700">301/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Gaddige Pooja</td>
+                                <td class="py-3 px-4 text-right text-gray-700">251/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Kalasasthana</td>
+                                <td class="py-3 px-4 text-right text-gray-700">251/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Laxmi Kayee</td>
+                                <td class="py-3 px-4 text-right text-gray-700">251/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Prashne</td>
+                                <td class="py-3 px-4 text-right text-gray-700">201/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Naga Tanu</td>
+                                <td class="py-3 px-4 text-right text-gray-700">151/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Kumkum Archane Seva</td>
+                                <td class="py-3 px-4 text-right text-gray-700">101/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Karpoora Aarati</td>
+                                <td class="py-3 px-4 text-right text-gray-700">51/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Annadana</td>
+                                <td class="py-3 px-4 text-right text-gray-700">7,001/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Shaswata Pooja</td>
+                                <td class="py-3 px-4 text-right text-gray-700">2,001/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Dosha Nivarane (Single)</td>
+                                <td class="py-3 px-4 text-right text-gray-700">2,500/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Dosha Nivarane (Family)</td>
+                                <td class="py-3 px-4 text-right text-gray-700">3,500/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">Chamundi Paniyera Seva(Only on Sankrant of every month)</td>
+                                <td class="py-3 px-4 text-right text-gray-700">501/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">2 Wheeler Pooja</td>
+                                <td class="py-3 px-4 text-right text-gray-700">251/-</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 text-gray-700">4 Wheeler Pooja</td>
+                                <td class="py-3 px-4 text-right text-gray-700">501/-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-6 bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+                    <p class="text-amber-800 font-medium">
+                        <i class="fas fa-info-circle mr-2"></i> All sevas are subject to availability. Please contact temple office for booking and more details or Book the Seva Online on <a href="third.html" target=_blank title="This take you to Online seva Booking"> Online Seva Booking </a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Seva Booking Section -->
+    <section id="online-booking" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Online Seva Booking</h2>
+            
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                    <a href="third.html" target="_blank" class="block">
+                        <div class="p-8 text-center">
+                            <div class="bg-amber-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                                <i class="fas fa-calendar-check text-amber-600 text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Book Your Seva Online</h3>
+                            <p class="text-gray-600 mb-6">
+                                Click here to book your preferred seva online. Choose from various poojas.
+                            </p>
+                            <button class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                                Book Now <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seva Timings Section -->
+    <section id="seva" class="py-16 bg-white relative">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Devasthana Timings</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
+                <div class="lg:w-1/2 bg-amber-50 rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-amber-800 mb-6 flex items-center">
+                        <i class="fas fa-calendar-day mr-3"></i> Regular Daily Schedule
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-amber-200 pb-2">
+                            <span class="font-medium text-gray-800">Morning Darshan</span>
+                            <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">6:00 AM - 12:00 Noon</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-amber-200 pb-2">
+                            <span class="font-medium text-gray-800">Temple Closure</span>
+                            <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">12:00 Noon - 5:30 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-amber-200 pb-2">
+                            <span class="font-medium text-gray-800">Evening Darshan</span>
+                            <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">5:30 PM - 9:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-amber-200 pb-2">
+                            <span class="font-medium text-gray-800">Morning Aarti</span>
+                            <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">7:00 AM</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-amber-200 pb-2">
+                            <span class="font-medium text-gray-800">Afternoon Aarti</span>
+                            <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">10:30 AM</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-amber-200 pb-2">
+                            <span class="font-medium text-gray-800">Evening Aarti</span>
+                            <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">8:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 bg-purple-50 rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-purple-800 mb-6 flex items-center">
+                        <i class="fas fa-star mr-3"></i> Saturday Seva
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="schedule-item">
+                            <h4 class="font-bold text-gray-800">Bhajan</h4>
+                            <p class="text-gray-600">7:00 PM - 8:30 PM</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="font-bold text-gray-800">Maha Mangalarthi</h4>
+                            <p class="text-gray-600">8:30 PM - 9:00 PM</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="font-bold text-gray-800">Devi Darshana</h4>
+                            <p class="text-gray-600">9:00 PM - 10:00 PM</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="font-bold text-gray-800">Chamundi Darshana(Every Month Last Saturday)</h4>
+                            <p class="text-gray-600">9:00 PM - 10:00 PM</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="font-bold text-gray-800">Annadana & Theertha Prasada</h4>
+                            <p class="text-gray-600">9:00 PM - 10:00 PM</p>
+                            <p class="text-sm text-purple-600 mt-1">Annadana served to all devotees</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="font-bold text-gray-800">Mangalarathi & Mukthaya</h4>
+                            <p class="text-gray-600">10:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 bg-purple-100 border-l-4 border-purple-500 p-4 rounded">
+                        <p class="text-purple-800 font-medium">
+                            <i class="fas fa-hands-helping mr-2"></i> Please contact temple office for details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 rounded-lg p-8 shadow-lg">
+                <h3 class="text-2xl font-bold text-blue-800 mb-6 flex items-center">
+                    <i class="fas fa-moon mr-3"></i> Yearly Pooja and Programme’s Details
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="font-bold text-gray-800 mb-2">Shree Datta Jayanti</h4>
+                        <p class="text-gray-600 text-sm mb-2">December</p>
+                        <p class="text-gray-700">Special Pooja celebrating Lord Dattatreya's birth.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="font-bold text-gray-800 mb-2">Navaratri</h4>
+                        <p class="text-gray-600 text-sm mb-2">September/October</p>
+                        <p class="text-gray-700">Nine nights of special pooja of the Navdurga.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="font-bold text-gray-800 mb-2">Shree Hanuman Jayanti</h4>
+                        <p class="text-gray-600 text-sm mb-2">March/April</p>
+                        <p class="text-gray-700">Celebration of Hanuman Jayanti and Special Poojas.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="font-bold text-gray-800 mb-2">Annual Mahapoojotsav</h4>
+                        <p class="text-gray-600 text-sm mb-2">January</p>
+                        <p class="text-gray-700">Grand annual celebration with Special Abhishekas, Homas and Cultural programs which starts from Abhisheka on Friday and Ends on Sunday with Chamundi Daiva Kola.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="font-bold text-gray-800 mb-2">Ekka Bhajana</h4>
+                        <p class="text-gray-600 text-sm mb-2">During Holi Festival</p>
+                        <p class="text-gray-700">Devotional singing and bhajans chanting the name of God Vithhal and Rukmini which starts from 7:00 am of first day to 7:00 am of second day.</p>
+                    </div>
+                     <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="font-bold text-gray-800 mb-2">Shree Krishna Janmashtami</h4>
+                        <p class="text-gray-600 text-sm mb-2">August</p>
+                        <p class="text-gray-700">Celebration of the birth of Lord Krishna and Special Poojas.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <p class="text-blue-800 font-medium">
+                        <i class="fas fa-calendar-check mr-2"></i> There are many Pooja and Programmes like Haldi Kumkum, Angarika Sankasti, Satyanarayana Pooja, Guru Poornima, Ganesh Chaturthi, Narayani Guru Jayanti, Dassera, Kojagiri Poornima, Shani Pooja, Laxmi Pooja, Tulsi Pooja. Please check with temple for current year schedule.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Developments Section -->
+    <section id="future" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Future Developments</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Ratha Utsava -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-04%20at%2011.35.37%20AM.jpeg?raw=true" 
+                         alt="Ratha Utsava" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Ratha Utsava</h3>
+                        <p class="text-gray-700 mb-4">
+                            Devasthana has planned to have a "Ratha Utsav" and "Pallaki Utsav" of Shree Durgambika Mata in a grand procession. Devasthana has also proposed to make a 'Kalyana Mantapa' where the underprivileged can perform marriage ceremony in concessional rates as per their budgeted limits.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Devasthana Renovations -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-05%20at%2010.13.38%20PM%20(1).jpeg?raw=true" 
+                         alt="Devasthana Renovations" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Devasthana Renovation</h3>
+                        <p class="text-gray-700 mb-4">
+                            Renovation of the Devasthana is also planned; it will be done as per 'Agamashastra'. The Devasthana will be constructed in Shila Maya (black Stone) as found in most of the Devasthana in Southern India.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Photo & Video Gallery</h2>
+            
+            <div class="mb-8 text-center">
+                <h3 class="text-2xl font-bold text-amber-600 mb-4">Latest Events</h3>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Relive the divine moments from our recent temple events and celebrations.
+                </p>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="mb-12">
+                <h4 class="text-xl font-bold text-gray-800 mb-6 flex items-center justify-center">
+                    <i class="fas fa-camera mr-2 text-amber-500"></i> Photo Gallery
+                </h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- Sample photos - replace with your actual images -->
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-04%20at%201.22.26%20PM.jpeg?raw=true" 
+                             alt="Event 1" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-08%20at%204.29.50%20PM.jpeg?raw=true" 
+                             alt="Event 2" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-04%20at%201.22.26%20PM%20(2).jpeg?raw=true" 
+                             alt="Event 3" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                    </div>
+                </div>
+                <div class="text-center mt-6">
+                    <a href="https://www.facebook.com/sdddevasthana/" class="inline-flex items-center text-amber-600 font-medium hover:text-amber-800">
+                        View More Photos <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Video Gallery -->
+            <div>
+                <h4 class="text-xl font-bold text-gray-800 mb-6 flex items-center justify-center">
+                    <i class="fas fa-video mr-2 text-amber-500"></i> Video Gallery
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Sample videos - replace with your actual YouTube embeds -->
+                    <div class="bg-black rounded-lg overflow-hidden shadow-lg">
+                        <iframe class="w-full h-64" src="https://www.youtube.com/embed/oReCqDkB5Eg?si=ELlsof7DvhM5MEyf" title="YouTube video player" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                        <div class="p-4">
+                            <h5 class="font-bold text-white">Nagara Panchami 2025</h5>
+                        </div>
+                    </div>
+                    <div class="bg-black rounded-lg overflow-hidden shadow-lg">
+                        <iframe class="w-full h-64" src="https://www.youtube.com/embed/CdAYZbtaT4Y?si=YAt3bDjCp3tKN647" title="YouTube video player" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                        <div class="p-4">
+                            <h5 class="font-bold text-white">Chamundi Kola 2025</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-6">
+                    <a href="https://www.youtube.com/@dattatreyadurgambikadevast2391" target="_blank" 
+                       class="inline-flex items-center text-amber-600 font-medium hover:text-amber-800">
+                        Visit Our YouTube Channel <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Connect With Us</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- YouTube -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="bg-red-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fab fa-youtube text-red-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">YouTube</h3>
+                        <p class="text-gray-600 mb-4">Watch our live aartis, bhajans and special events</p>
+                        <a href="https://www.youtube.com/@dattatreyadurgambikadevast2391" target="_blank" 
+                           class="inline-block bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-full transition duration-300">
+                            Subscribe
+                        </a>
+                    </div>
+                    
+                    <!-- Facebook -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="bg-blue-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fab fa-facebook-f text-blue-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Facebook</h3>
+                        <p class="text-gray-600 mb-4">Get updates on temple events and share your experiences</p>
+                        <a href="https://www.facebook.com/sdddevasthana/" target="_blank" 
+                           class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full transition duration-300">
+                            Follow Us
+                        </a>
+                    </div>
+                    
+                    <!-- Instagram -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="bg-pink-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fab fa-instagram text-pink-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Instagram</h3>
+                        <p class="text-gray-600 mb-4">See beautiful photos from our temple and festivals</p>
+                        <a href="https://www.instagram.com/sdddevasthana/" target="_blank" 
+                           class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-medium py-2 px-6 rounded-full transition duration-300">
+                            Follow Us
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <p class="text-gray-600 mb-4">Join our community across all platforms</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://www.youtube.com/@dattatreyadurgambikadevast2391" target="_blank" class="text-gray-700 hover:text-red-600 transition duration-300">
+                            <i class="fab fa-youtube text-3xl"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sdddevasthana/" target="_blank" class="text-gray-700 hover:text-blue-600 transition duration-300">
+                            <i class="fab fa-facebook-f text-3xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sdddevasthana/" target="_blank" class="text-gray-700 hover:text-pink-600 transition duration-300">
+                            <i class="fab fa-instagram text-3xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="events" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Upcoming Events</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Renovation Option -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <a href="first.html" target="_blank" class="block">
+                        <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-06%20at%2010.56.53%20AM.jpeg?raw=true" 
+                             alt="Temple Renovation" class="w-full h-64 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Temple Renovation</h3>
+                            <p class="text-gray-600">Click to view details about our upcoming renovation plans and how you can contribute</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Programs Option -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <a href="second.html" target="_blank" class="block">
+                        <img src="https://github.com/SDDD1964/website/blob/main/WhatsApp%20Image%202025-08-06%20at%2010.56.59%20AM%20(1).jpeg?raw=true" 
+                             alt="Upcoming Programs" class="w-full h-64 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Special Programs</h3>
+                            <p class="text-gray-600">Click to see our upcoming spiritual programs, bhajans and cultural events</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Contact & Location</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-red-500"></i> Temple Address
+                        </h3>
+                        <address class="text-gray-700 not-italic mb-6">
+                            Shree Dattatreya Durgambika Devasthana<br>
+                            Shree Dattatreya Durgambika Marg, Subhash Nagar<br>
+                            Asalpha, Ghatkopar(W), Mumbai-400084
+                        </address>
+                        
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-blue-500"></i> Contact Details
+                        </h3>
+                        <div class="space-y-3 mb-6">
+                            <p class="text-gray-700">
+                                <i class="fas fa-phone mr-2"></i> Temple Office: <a href="tel:07777078349" class="text-blue-600 hover:underline">07777078349</a>
+                            </p>
+                            <p class="text-gray-700">
+                                <i class="fas fa-envelope mr-2"></i> Email: <a href="mailto:dattatreyambm@gmail.com" class="text-blue-600 hover:underline">dattatreyambm@gmail.com</a>
+                            </p>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-clock mr-3 text-amber-500"></i> Office Hours
+                        </h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">Monday - Friday</span>
+                                <span class="font-medium">7:00 PM - 9:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">Saturday</span>
+                                <span class="font-medium">5:00 PM - 9:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-donate mr-3 text-green-500"></i> Donations & Support
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            Your generous donations help us maintain the temple, conduct daily rituals, and organize annadana seva for the community.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-rupee-sign mr-3 text-green-600"></i>
+                                <span class="text-gray-700">Bank Account: Shree Dattatreya Mitra Bhajana Mandali</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-university mr-3 text-green-600"></i>
+                                <span class="text-gray-700">Bank: HDFC Bank</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-id-card mr-3 text-green-600"></i>
+                                <span class="text-gray-700">Account Number: 50200076361677</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-code-branch mr-3 text-green-600"></i>
+                                <span class="text-gray-700">IFSC: HDFC0000239</span>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fas fa-qrcode mr-2 text-blue-500"></i> Scan to Donate
+                            </h4>
+                            <img src="https://github.com/SDDD1964/website/blob/main/IMG_20250820_205141.png?raw=true" 
+                                 alt="Donation QR Code" class="w-36 h-36 mx-auto mb-2 border border-gray-200">
+                            <p class="text-gray-600 text-center text-sm">Scan this QR code to make a UPI payment. UPI ID: 7777078349@hdfcbank</p>
+                        </div>
+                        <div class="mt-4 bg-green-50 border-l-4 border-green-500 p-3">
+                            <p class="text-green-800 text-sm">
+                                <i class="fas fa-info-circle mr-2"></i> Please contact temple office for receipt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-4 rounded-lg shadow-lg">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.441239691283!2d72.897261!3d19.096082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8783ef15c07%3A0xfe55937f9cb4a535!2sShree%20Dattatreya%20Durgambika%20Devasthana!5e0!3m2!1sen!2sin!8m2!3d19.096082!4d72.897261!16s%2Fg%2F1tp_4w23" 
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-question-circle mr-3 text-purple-500"></i> Frequently Asked Questions
+                        </h3>
+                        
+                        <div class="space-y-4">
+                            <div class="border-b border-gray-200 pb-4">
+                                <h4 class="font-bold text-gray-800 mb-2">Is photography allowed inside the temple?</h4>
+                                <p class="text-gray-700">Photography is allowed in the temple premises but not inside the Garba Gudi. Please respect the sanctity of the place.</p>
+                            </div>
+                            <div class="border-b border-gray-200 pb-4">
+                                <h4 class="font-bold text-gray-800 mb-2">Is there parking available?</h4>
+                                <p class="text-gray-700">Temple Ground parking is available near the temple. On Festival days, it's recommended to use public transport.</p>
+                            </div>
+                            <div class="border-b border-gray-200 pb-4">
+                                <h4 class="font-bold text-gray-800 mb-2">How can I participate in Saturday Annadana?</h4>
+                                <p class="text-gray-700">You can contribute groceries, vegetables or funds for the annadana. Please contact temple office before Thursday to coordinate.</p>
+                            </div>
+                            <div class="pb-2">
+                                <h4 class="font-bold text-gray-800 mb-2">Can we perform special poojas for personal occasions?</h4>
+                                <p class="text-gray-700">Yes, special poojas can be arranged for birthdays, anniversaries etc. You can also Book the Hall. Please contact Temple Office and Temple Bhat at least 2 days in advance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between gap-8">
+                <div class="md:w-1/3">
+                    <h3 class="text-xl font-bold mb-4">Shree Dattatreya Durgambika Devasthana</h3>
+                    <p class="text-gray-400 mb-4">
+                        A old place of worship dedicated to Lord Dattatreya and Goddess Durgambika, serving devotees with spiritual guidance and community service.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/sdddevasthana/" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sdddevasthana/" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@dattatreyadurgambikadevast2391" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/917777078349" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/3">
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Temple</a></li>
+                        <li><a href="#deities" class="text-gray-400 hover:text-white transition duration-300">Gods</a></li>
+                        <li><a href="#seva" class="text-gray-400 hover:text-white transition duration-300">Seva Timings</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="md:w-1/3">
+                    <h3 class="text-xl font-bold mb-4">Feedback</h3>
+                    <p class="text-gray-400 mb-4">
+                        Give us your Feedback.
+                    </p>
+                    <form class="flex">
+                        <input type="text" placeholder="Type Here" class="px-4 py-2 w-full rounded-l focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-r transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; Shree Dattatreya Durgambika Devasthana. All Rights Reserved.</p>
+                <p class="mt-2 text-sm">Designed with <i class="fas fa-heart text-red-400"></i> for devotees</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-amber-500 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Renovation Button -->
+    <a href="first.html" class="fixed bottom-8 left-8 bg-[#800000] hover:bg-[#600000] text-white font-medium py-3 px-4 rounded-full shadow-lg flex items-center justify-center transition duration-300 z-50">
+        Renovation
+    </a>
+
+    <script>
+        // Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Enhanced smooth scrolling for navigation links with header offset
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Update active nav link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Hide mobile menu after click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Highlight active section in navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
